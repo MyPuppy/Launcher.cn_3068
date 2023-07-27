@@ -578,11 +578,10 @@ namespace RiderData
                 oPacket.WriteInt(1);
                 oPacket.WriteInt(1);
                 int SkidMark = 46;
-                oPacket.WriteInt(SkidMark - 13);
+                oPacket.WriteInt(SkidMark - 10);
                 for (short i = 1; i <= SkidMark; i++)
                 {
-                    if (i == 12 || i == 13 || i == 20 || i == 21 || i == 22 || i == 24 || i == 27 || i == 28 || i == 29 || i == 42 ||
-                        i == 43)
+                    if (i == 12 || i == 13 || i == 20 || i == 22 || i == 24 || i == 27 || i == 28 || i == 29 || i == 42 || i == 43)
                     {
                     }
                     else
