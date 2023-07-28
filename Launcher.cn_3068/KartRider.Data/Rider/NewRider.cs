@@ -365,14 +365,14 @@ namespace RiderData
                 oPacket.WriteInt(1);
                 oPacket.WriteInt(1);
                 int Character = 437;
-                oPacket.WriteInt(Character - 43 -75);
+                oPacket.WriteInt(Character - 42 -75);
                 for (short i = 1; i <= Character; i++)//Character
                 {
-                    if (i == 47 || i == 48 || i == 63 || i == 116 || i == 117 || i == 124 || i == 128 || i == 130 || i == 134 || i == 137 ||
-                        i == 144 || i == 147 || i == 149 || i == 159 || i == 175 || i == 176 || i == 184 || i == 192 || i == 193 || i == 194 ||
-                        i == 195 || i == 196 || i == 197 || i == 231 || i == 239 || i == 245 || i == 246 || i == 247 || i == 265 || i == 333 ||
-                        i == 334 || i == 335 || i == 336 || i == 337 || i == 338 || i == 339 || i == 350 || i == 376 || i == 377 || i == 391 ||
-                        i == 392 || i == 396 || i == 397 ||
+                    if (i == 47 || i == 48 || i == 116 || i == 117 || i == 124 || i == 128 || i == 130 || i == 134 || i == 137 || i == 144 || 
+                        i == 147 || i == 149 || i == 159 || i == 175 || i == 176 || i == 184 || i == 192 || i == 193 || i == 194 || i == 195 || 
+                        i == 196 || i == 197 || i == 231 || i == 239 || i == 245 || i == 246 || i == 247 || i == 265 || i == 333 || i == 334 || 
+                        i == 335 || i == 336 || i == 337 || i == 338 || i == 339 || i == 350 || i == 376 || i == 377 || i == 391 || i == 392 || 
+                        i == 396 || i == 397 ||
 
                         i == 33 || i == 34 || i == 35 || i == 36 || i == 38 || i == 39 || i == 40 || i == 41 || i == 42 || i == 43 ||
                         i == 45 || i == 56 || i == 70 || i == 84 || i == 97 || i == 98 || i == 99 || i == 100 || i == 105 || i == 106 ||
@@ -410,7 +410,7 @@ namespace RiderData
                 oPacket.WriteInt(1);
                 oPacket.WriteInt(1);
                 int Pet = 174;
-                oPacket.WriteInt(Pet + 8 - 19);
+                oPacket.WriteInt(Pet + 8 - 17);
                 for (short i = 30000; i <= 30008; i++)
                 {
                     if (i == 30001)
@@ -433,8 +433,8 @@ namespace RiderData
                 }
                 for (short i = 1; i <= Pet; i++)
                 {
-                    if (i == 1 || i == 4 || i == 7 || i == 9 || i == 12 || i == 36 || i == 40 || i == 73 || i == 77 || i == 85 ||
-                        i == 92 || i == 94 || i == 96 || i == 106 || i == 123 || i == 136 || i == 151 || i == 156 || i == 166)
+                    if (i == 1 || i == 4 || i == 7 || i == 9 || i == 12 || i == 36 || i == 40 || i == 73 || i == 92 || i == 94 ||
+                        i == 96 || i == 106 || i == 123 || i == 136 || i == 151 || i == 156 || i == 166)
                     {
                     }
                     else
@@ -791,7 +791,7 @@ namespace RiderData
                         oPacket.WriteShort(11);
                         oPacket.WriteShort(i);
                         oPacket.WriteShort(0);
-                        oPacket.WriteShort(NewRider.Value1);
+                        oPacket.WriteShort(NewRider.Value2);
                         oPacket.WriteByte((byte)((Program.PreventItem ? 1 : 0)));
                         oPacket.WriteByte(0);
                         oPacket.WriteShort(-1);
@@ -836,7 +836,7 @@ namespace RiderData
                         oPacket.WriteShort(11);
                         oPacket.WriteShort(i);
                         oPacket.WriteShort(0);
-                        oPacket.WriteShort(NewRider.Value1);
+                        oPacket.WriteShort(NewRider.Value2);
                         oPacket.WriteByte((byte)((Program.PreventItem ? 1 : 0)));
                         oPacket.WriteByte(0);
                         oPacket.WriteShort(-1);
