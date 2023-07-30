@@ -926,7 +926,7 @@ namespace RiderData
                 oPacket.WriteInt(1);
                 oPacket.WriteInt(1);
                 int MyRoom = 54;
-                oPacket.WriteInt(MyRoom + 1 - 24);
+                oPacket.WriteInt(MyRoom + 1 - 23);
                 oPacket.WriteShort(28);
                 oPacket.WriteShort(30000);
                 oPacket.WriteShort(0);
@@ -941,8 +941,8 @@ namespace RiderData
                 for (short i = 1; i <= MyRoom; i++)
                 {
                     if (i == 1 || i == 4 || i == 5 || i == 8 || i == 10 || i == 11 || i == 12 || i == 14 || i == 16 || i == 19 ||
-                        i == 21 || i == 24 || i == 35 || i == 37 || i == 38 || i == 39 || i == 40 || i == 41 || i == 45 || i == 46 ||
-                        i == 47 || i == 48 || i == 49 || i == 50)
+                        i == 21 || i == 24 || i == 35 || i == 37 || i == 39 || i == 40 || i == 41 || i == 45 || i == 46 || i == 47 || 
+                        i == 48 || i == 49 || i == 50)
                     {
                     }
                     else
